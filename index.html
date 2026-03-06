@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0E0718">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://mpalath.com/">
+  <link rel="icon" type="image/png" href="assets/mpalath-logo.png">
+  <link rel="apple-touch-icon" href="assets/mpalath-logo-full.png">
+
+  <title>M'PALATH — Luxury Atelier | Couture-Crafted Elegance Kochi</title>
+  <meta name="description"
+    content="M'PALATH is a luxury bridal and bespoke tailoring studio by Devapriya Renjith in Kochi, India. Premium hand-finished couture for modern women. Private fittings by appointment.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mpalath.com/">
+  <meta property="og:title" content="M'PALATH — Luxury Atelier | Couture-Crafted Elegance">
+  <meta property="og:description"
+    content="Premium bridal, occasion, and bespoke tailoring with meticulous, hand-finished detail.">
+  <meta property="og:image" content="https://mpalath.com/assets/hero-main.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="M'PALATH — Luxury Atelier">
+  <meta name="twitter:description"
+    content="Premium bridal, occasion, and bespoke tailoring with meticulous, hand-finished detail.">
+  <meta name="twitter:image" content="https://mpalath.com/assets/hero-main.jpg">
+
+  <!-- Performance: Preload Critical Assets (LCP) -->
+  <link rel="preload" as="image" href="assets/hero-main.jpg">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FashionBoutique",
+    "name": "M'PALATH",
+    "image": "https://mpalath.com/assets/hero-main.jpg",
+    "description": "A luxury atelier dedicated to the art of couture tailoring. Every garment is an act of devotion — born in Kochi, India.",
+    "founder": {
+      "@type": "Person",
+      "name": "Devapriya Renjith"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kochi",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "priceRange": "$$$$"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader-overlay" class="loader-overlay">
+    <div class="loader-content">
+      <div class="wordmark-container" id="wordmark-container">
+        <!-- Hidden base (for needle tracking width) -->
+        <div class="wordmark-base" aria-hidden="true">M'PALATH</div>
+        <!-- Reveal layer with clip-path animation -->
+        <div class="wordmark-reveal" id="wordmark-reveal">
+          <img src="assets/mpalath-logo-full.png" alt="M'PALATH by Devapriya Renjith" class="loader-logo-img" />
+        </div>
+        <div class="needle-wrapper" id="needle-wrapper">
+          <svg class="needle-svg" id="needle-svg" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="silver-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FFFFFF" />
+                <stop offset="50%" stop-color="#C0C0C0" />
+                <stop offset="100%" stop-color="#808080" />
+              </linearGradient>
+            </defs>
+            <path d="M 80,20 L 10,90 L 20,95 L 85,30 Z" fill="url(#silver-grad)" />
+            <ellipse cx="80" cy="25" rx="2" ry="6" fill="#222" transform="rotate(-45 80 25)" />
+            <path d="M 80,25 Q 95,10 50,50" fill="none" stroke="#6B2FB8" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo" aria-label="M'PALATH Homepage" title="Return to M'PALATH Homepage">
+      <img src="assets/mpalath-logo.png" alt="M'PALATH Studio Logo" class="nav-logo-img" />
+    </a>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Open Navigation Menu">MENU</button>
+  </nav>
+
+  <!-- Full-screen overlay menu -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Main Navigation Menu">
+    <button class="overlay-close" id="overlay-close" aria-label="Close Menu">CLOSE</button>
+    <ul class="overlay-nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact-cta">Contact</a></li>
+    </ul>
+    <div class="overlay-footer">
+      <span>Atelier &bull; Mumbai</span>
+      <span>Private Fittings by Appointment</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-left">
+        <p class="hero-eyebrow">M'PALATH ATELIER</p>
+        <h1 class="hero-headline" id="hero-heading">
+          For a friend<br>
+          <em>by a friend.</em>
+        </h1>
+        <p class="hero-subtext">
+          Premium bridal, occasion, and bespoke tailoring
+          with meticulous, hand-finished detail.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#contact-cta" class="btn-primary" id="hero-book-btn"
+            aria-label="Book a bespoke consultation with Devapriya">Book a Consultation</a>
+          <a href="#collections" class="btn-outline" id="hero-explore-btn"
+            aria-label="Explore our current bridal and occasion wear collections">Explore Collections</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image-frame" id="hero-image-frame">
+          <img class="hero-slide active" src="assets/hero-main.jpg"
+            alt="Model wearing M'PALATH bespoke bridal couture black gown, handcrafted in Kochi" loading="eager">
+          <img class="hero-slide" src="assets/IMAGES/mplth post 04 05.jpg.jpeg"
+            alt="M'PALATH baby pink cotton ensemble with delicate pleats in black and white editorial" loading="lazy">
+          <img class="hero-slide" src="assets/IMAGES/MP 01.jpg.jpeg"
+            alt="M'PALATH black bell-sleeve top with cream accents against terracotta backdrop" loading="lazy">
+          <img class="hero-slide" src="assets/IMAGES/mplth post 04 03.jpg.jpeg"
+            alt="M'PALATH pink cotton kurta set with pearl choker on seated model" loading="lazy">
+        </div>
+      </div>
+
+      <div class="hero-bottom-row">
+        <span>Atelier &bull; Kochi, India</span>
+        <span>Private Fittings by Appointment</span>
+      </div>
+
+      <!-- Ticker -->
+      <div class="hero-ticker">
+        <div class="ticker-track">
+          <span>Hand-stitched Details</span><span class="dot">&bull;</span>
+          <span>Limited Slots Every Season</span><span class="dot">&bull;</span>
+          <span>Bespoke Tailoring</span><span class="dot">&bull;</span>
+          <span>Bridal Couture</span><span class="dot">&bull;</span>
+          <span>Private Fittings</span><span class="dot">&bull;</span>
+          <span>Devapriya Renjith</span><span class="dot">&bull;</span>
+          <span>Kochi Atelier</span><span class="dot">&bull;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="about-left">
+        <p class="about-label reveal">Our Story</p>
+
+        <h2 class="about-headline reveal reveal-delay-1" id="about-heading">
+          Where every thread<br>
+          tells a <em>story</em> of craft.
+        </h2>
+        <p class="about-text reveal reveal-delay-2">
+          M'PALATH was born from a deep reverence for the art of tailoring — where couture is not just clothing, but a
+          ceremony of self-expression. Each piece is conceived to honour the woman who wears it.
+        </p>
+        <p class="about-text reveal reveal-delay-2">
+          Founded by Devapriya Renjith, our atelier in Kochi, India operates on an intimate, appointment-only model.
+          Every
+          garment passes through thirty hand-finishing stages before it leaves our studio.
+        </p>
+        <div class="about-stats reveal reveal-delay-3">
+          <p class="about-text" style="grid-column: 1 / -1; font-weight: 500;">
+            A newly launched creative studio focused on modern design and high-quality experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-right reveal">
+        <div class="about-image-wrap">
+          <img src="assets/about.jpg"
+            alt="Close-up of artisan hands meticulously hand-stitching a bespoke couture garment at M'PALATH atelier"
+            loading="lazy">
+        </div>
+        <div class="about-quote-card">
+          <p>"Every stitch is a quiet act of devotion."</p>
+          <cite>— Devapriya Renjith, Founder</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COLLECTIONS ===================== -->
+    <section id="collections" aria-labelledby="collections-heading">
+      <div class="section-header reveal">
+        <div>
+          <span class="section-label">Our Work</span>
+          <h2 class="section-title" id="collections-heading">Current <em>Collections</em></h2>
+        </div>
+        <a href="#contact-cta" class="section-link" aria-label="View all M'PALATH couture collections">View All →</a>
+      </div>
+
+      <div class="collections-grid reveal reveal-delay-1">
+        <!-- 1) Red Dress (Hero) -->
+        <div class="collection-card"
+          data-images="assets/IMAGES/mplth post 001.jpg.jpeg,assets/IMAGES/mplth post 002.jpg.jpeg,assets/IMAGES/mplth post 003.jpg.jpeg,assets/IMAGES/mplth post 004.jpg.jpeg,assets/IMAGES/mplth post 005.jpg.jpeg">
+          <img class="collection-card-img" src="assets/IMAGES/mplth post 003.jpg.jpeg"
+            alt="Crimson Reverie bridal couture red gown with intricate hand-embroidery by M'PALATH" loading="lazy">
+          <div class="collection-card-info">
+            <span class="tag">Bridal · SS 2026</span>
+            <div class="name">Crimson Reverie</div>
+          </div>
+          <div class="collection-card-overlay">
+            <div class="collection-card-tag">Bridal Couture</div>
+            <div class="collection-card-name">Crimson Reverie</div>
+          </div>
+        </div>
+
+        <!-- 2) Black Dress -->
+        <div class="collection-card"
+          data-images="assets/IMAGES/MP 01.jpg.jpeg,assets/IMAGES/MP 02.jpg.jpeg,assets/IMAGES/MP 03.jpg.jpeg,assets/IMAGES/MPALATH 04.jpg.jpeg">
+          <img class="collection-card-img" src="assets/IMAGES/MPALATH 04.jpg.jpeg"
+            alt="Velvet Dusk elegant black evening wear dress with modern silhouette" loading="lazy">
+          <div class="collection-card-info">
+            <span class="tag">Evening</span>
+            <div class="name">Velvet Dusk</div>
+          </div>
+          <div class="collection-card-overlay">
+            <div class="collection-card-tag">Evening Wear</div>
+            <div class="collection-card-name">Velvet Dusk</div>
+          </div>
+        </div>
+
+        <!-- 3) Peach Dress -->
+        <div class="collection-card"
+          data-images="assets/IMAGES/mplth post 04 01.jpg.jpeg,assets/IMAGES/mplth post 04 02.jpg.jpeg,assets/IMAGES/mplth post 04 03.jpg.jpeg,assets/IMAGES/mplth post 04 04.jpg.jpeg,assets/IMAGES/mplth post 04 05.jpg.jpeg">
+          <img class="collection-card-img" src="assets/IMAGES/mplth post 04 02.jpg.jpeg"
+            alt="Blush Elegance peach bespoke occasion wear dress featuring delicate drape" loading="lazy">
+          <div class="collection-card-info">
+            <span class="tag">Occasion</span>
+            <div class="name">Blush Elegance</div>
+          </div>
+          <div class="collection-card-overlay">
+            <div class="collection-card-tag">Occasion Wear</div>
+            <div class="collection-card-name">Blush Elegance</div>
+          </div>
+        </div>
+
+        <!-- 4) Yellow Dress -->
+        <div class="collection-card"
+          data-images="assets/IMAGES/04.jpg.jpeg,assets/IMAGES/05.jpg.jpeg,assets/IMAGES/06.jpg.jpeg">
+          <img class="collection-card-img" src="assets/IMAGES/06.jpg.jpeg"
+            alt="Golden Bloom luxury yellow bespoke occasion wear dress for celebrations" loading="lazy">
+          <div class="collection-card-info">
+            <span class="tag">Occasion</span>
+            <div class="name">Golden Bloom</div>
+          </div>
+          <div class="collection-card-overlay">
+            <div class="collection-card-tag">Occasion Wear</div>
+            <div class="collection-card-name">Golden Bloom</div>
+          </div>
+        </div>
+
+        <!-- 5) Brown Dress -->
+        <div class="collection-card" data-images="assets/IMAGES/mplath post 03.jpeg">
+          <img class="collection-card-img" src="assets/IMAGES/mplath post 03.jpeg"
+            alt="Earthen Grace premium brown evening gown with refined tailoring" loading="lazy">
+          <div class="collection-card-info">
+            <span class="tag">Evening</span>
+            <div class="name">Earthen Grace</div>
+          </div>
+          <div class="collection-card-overlay">
+            <div class="collection-card-tag">Evening Wear</div>
+            <div class="collection-card-name">Earthen Grace</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="services-left">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title" id="services-heading">Bespoke<br><em>Services</em></h2>
+        <p>Each service is a fully tailored experience — no templates, no off-the-rack. Your garment is conceived,
+          crafted, and perfected exclusively for you.</p>
+        <a href="#contact-cta" class="btn-primary">Book a Fitting</a>
+      </div>
+
+      <div class="services-right">
+        <div class="service-item reveal">
+          <div class="service-item-left">
+            <span class="service-num">01</span>
+            <span class="service-name">Bridal Couture</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="19" x2="19" y2="5" />
+              <polyline points="5,5 19,5 19,19" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-item reveal reveal-delay-1">
+          <div class="service-item-left">
+            <span class="service-num">02</span>
+            <span class="service-name">Occasion Wear</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="19" x2="19" y2="5" />
+              <polyline points="5,5 19,5 19,19" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-item reveal reveal-delay-2">
+          <div class="service-item-left">
+            <span class="service-num">03</span>
+            <span class="service-name">Bespoke Tailoring</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="19" x2="19" y2="5" />
+              <polyline points="5,5 19,5 19,19" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-item reveal reveal-delay-3">
+          <div class="service-item-left">
+            <span class="service-num">04</span>
+            <span class="service-name">Trousseau Curation</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="19" x2="19" y2="5" />
+              <polyline points="5,5 19,5 19,19" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-item reveal reveal-delay-4">
+          <div class="service-item-left">
+            <span class="service-num">05</span>
+            <span class="service-name">Garment Restoration</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="19" x2="19" y2="5" />
+              <polyline points="5,5 19,5 19,19" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" aria-labelledby="process-heading">
+      <div class="process-header reveal">
+        <span class="section-label" style="display:block; text-align:center; margin-bottom:12px;">How It Works</span>
+        <h2 class="section-title" id="process-heading">Our <em>Atelier Process</em></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Discovery Call</h3>
+          <p class="step-desc">We begin with a private consultation to understand your vision, aesthetic, and occasion.
+            No
+            garment is started without deep listening.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Design & Fabric</h3>
+          <p class="step-desc">Mood boards, silhouette sketches, and fabric selection from our curated,
+            ethically-sourced
+            library of textiles.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Toile Fittings</h3>
+          <p class="step-desc">A muslin prototype is crafted first. Two to three fittings refine the drape and structure
+            until the silhouette is flawless.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Final Delivery</h3>
+          <p class="step-desc">The finished garment arrives wrapped in tissue, with a hand-written care card and a care
+            consultation included.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="reveal">
+        <span class="section-label" style="display: block; margin-bottom: 12px;">Client Words</span>
+        <h2 class="section-title" id="testimonials-heading">What Our <em>Clients</em> Say</h2>
+      </div>
+      <div class="testimonials-grid" style="display: block; text-align: center; padding: 40px 0;">
+        <p class="about-text">Client stories coming soon.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CTA SECTION ===================== -->
+    <section id="contact-cta" aria-labelledby="cta-heading">
+      <span class="cta-eyebrow">Private Atelier · Kochi, India</span>
+      <h2 class="cta-headline" id="cta-heading">
+        Let's craft something<br>
+        <em>extraordinary together.</em>
+      </h2>
+      <p class="cta-sub">Limited appointments available each season. Inquire early to secure your consultation with
+        Devapriya.</p>
+      <div class="cta-buttons">
+        <a href="mailto:studio@mpalath.com" class="btn-white" id="cta-email-btn"
+          aria-label="Send email to M'PALATH studio">Request an Appointment</a>
+        <a href="https://wa.me/917994104683" class="btn-ghost-white" id="cta-wa-btn" target="_blank" rel="noopener"
+          aria-label="Message M'PALATH studio on WhatsApp">WhatsApp Us ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/mpalath-logo.png" alt="M'PALATH luxury clothing brand logo" class="footer-logo-img" />
+        <h3 class="footer-slogan">For a friend<br><em>by a friend.</em></h3>
+        <p>A luxury atelier dedicated to the art of couture tailoring. Every garment is an act of devotion — born in
+          Kochi, India, worn by extraordinary women.</p>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/m.palath_?igsh=MXcwaWo0N2I5aXo1eA%3D%3D&utm_source=qr" id="footer-ig"
+            aria-label="Follow M'PALATH on Instagram" title="Official Instagram" target="_blank"
+            rel="noopener">Instagram</a>
+          <a href="#" id="footer-pin" aria-label="Follow M'PALATH on Pinterest" title="Official Pinterest">Pinterest</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Bridal Couture</a></li>
+          <li><a href="#services">Occasion Wear</a></li>
+          <li><a href="#services">Bespoke Tailoring</a></li>
+          <li><a href="#services">Trousseau</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:studio@mpalath.com">studio@mpalath.com</a></li>
+          <li><a href="tel:+917994104683">+91 79941 04683</a></li>
+          <li><a href="#contact-cta">Book Consultation</a></li>
+          <li><a href="#contact-cta">Kochi, India</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Giant wordmark -->
+    <div class="footer-wordmark">
+      <svg viewBox="0 0 1000 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <text x="50%" y="130" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="160"
+          font-weight="500" letter-spacing="20" fill="none" stroke="rgba(255,255,255,0.05)"
+          stroke-width="0.5">M'PALATH</text>
+      </svg>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 M'PALATH. All rights reserved.</span>
+      <span>Atelier &bull; Kochi, India &bull; Private Fittings by Appointment</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- ===================== GALLERY MODAL ===================== -->
+  <div id="gallery-modal" class="gallery-modal">
+    <div class="gallery-modal-overlay" id="gallery-modal-overlay"></div>
+    <div class="gallery-modal-content">
+      <button id="gallery-close" class="gallery-close-btn">&times;</button>
+      <div id="gallery-track" class="gallery-track"></div>
+    </div>
+  </div>
+</body>
+
+</html>

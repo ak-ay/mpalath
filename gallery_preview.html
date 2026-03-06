@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Analysis</title>
+    <style>
+        body { font-family: sans-serif; background: #eee; padding: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .card { background: white; padding: 10px; text-align: center; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        img { max-width: 100%; height: auto; max-height: 400px; display: block; margin: 0 auto 10px; }
+        h3 { font-size: 14px; margin: 0; color: #333; word-break: break-all; }
+    </style>
+</head>
+<body>
+    <script>
+        const images = [
+            "04.jpg.jpeg", "05.jpg.jpeg", "06.jpg.jpeg",
+            "MP 01.jpg.jpeg", "MP 02.jpg.jpeg", "MP 03.jpg.jpeg",
+            "MPALATH 04.jpg.jpeg", "mplath post 03.jpeg",
+            "mplth post 001.jpg.jpeg", "mplth post 002.jpg.jpeg", "mplth post 003.jpg.jpeg",
+            "mplth post 004.jpg.jpeg", "mplth post 005.jpg.jpeg",
+            "mplth post 04 01.jpg.jpeg", "mplth post 04 02.jpg.jpeg", "mplth post 04 03.jpg.jpeg",
+            "mplth post 04 04.jpg.jpeg", "mplth post 04 05.jpg.jpeg"
+        ];
+        images.forEach(src => {
+            document.write(`
+                <div class="card">
+                    <img src="assets/IMAGES/${src}" />
+                    <h3>${src}</h3>
+                </div>
+            `);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 180" width="560" height="180" role="img" aria-label="M'PALATH by Devapriya Renjith">
+  <defs>
+    <style>
+      .logo-text {
+        font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+        font-weight: 300;
+        letter-spacing: 0.12em;
+      }
+      .sub-text {
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.35em;
+        font-size: 13px;
+      }
+    </style>
+  </defs>
+
+  <!-- Main wordmark: M'PALATH -->
+  <text
+    x="50%"
+    y="108"
+    text-anchor="middle"
+    class="logo-text"
+    font-size="96"
+    font-weight="300"
+    letter-spacing="6"
+    fill="currentColor"
+  >M'PALATH</text>
+
+  <!-- 4-point sparkle / star on the M (positioned at top-left of M) -->
+  <!-- Center of sparkle roughly at x=82, y=32 -->
+  <g transform="translate(82, 32)" fill="currentColor">
+    <!-- Vertical arm -->
+    <path d="M0,-10 C0,-3 0,3 0,10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <!-- Horizontal arm -->
+    <path d="M-10,0 C-3,0 3,0 10,0" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <!-- Sparkle shape: 4 tapered petals -->
+    <path d="M0,-12 L1.2,-1.2 L12,0 L1.2,1.2 L0,12 L-1.2,1.2 L-12,0 L-1.2,-1.2 Z" fill="currentColor"/>
+  </g>
+
+  <!-- Subtitle: BY DEVAPRIYA RENJITH -->
+  <text
+    x="50%"
+    y="148"
+    text-anchor="middle"
+    class="sub-text"
+    fill="currentColor"
+    opacity="0.85"
+  >BY DEVAPRIYA RENJITH</text>
+</svg>
