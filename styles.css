@@ -1580,9 +1580,98 @@ footer {
     --section-pad: 60px;
   }
 
+  body {
+    cursor: auto;
+  }
+
+  #cursor,
+  #cursor-follower {
+    display: none;
+  }
+
+  .nav-menu-btn,
+  .btn-primary,
+  .btn-outline,
+  .btn-white,
+  .btn-ghost-white,
+  .collection-card,
+  .service-item,
+  .nav-overlay .overlay-close {
+    cursor: pointer;
+  }
+
+  nav {
+    mix-blend-mode: normal;
+  }
+
+  .nav-menu-btn {
+    letter-spacing: 0.14em;
+    padding: 10px 16px;
+  }
+
+  .nav-overlay {
+    justify-content: flex-start;
+    padding-top: calc(var(--nav-h) + 28px);
+    overflow-y: auto;
+  }
+
+  .overlay-nav-links {
+    margin-top: 20px;
+  }
+
+  .overlay-nav-links a {
+    font-size: clamp(34px, 11vw, 52px);
+    line-height: 1.08;
+  }
+
+  .overlay-footer {
+    position: static;
+    margin-top: 30px;
+    padding-top: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-h) + 24px);
+    padding-bottom: 84px;
+    gap: 28px;
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .hero-headline {
+    margin-bottom: 20px;
+  }
+
+  .hero-subtext {
+    max-width: none;
+    margin-bottom: 30px;
+  }
+
+  .hero-right {
+    height: min(72vw, 460px);
+  }
+
   .hero-cta-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 36px;
   }
 
   .collections-grid {
@@ -1602,15 +1691,52 @@ footer {
   .collection-card:nth-child(3) .collection-card-img,
   .collection-card:nth-child(4) .collection-card-img,
   .collection-card:nth-child(5) .collection-card-img {
-    min-height: 480px;
+    min-height: 340px;
   }
 
   .process-steps {
     grid-template-columns: 1fr;
   }
 
+  .service-item {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .service-item-left {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-arrow {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
   .footer-top {
     grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .gallery-modal-content {
+    width: 94%;
+    height: 74vh;
+  }
+
+  .gallery-close-btn {
+    top: -34px;
+    font-size: 34px;
+  }
+
+  .gallery-item {
+    max-width: 86vw;
   }
 
   .wordmark-base,
