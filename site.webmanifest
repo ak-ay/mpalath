@@ -1,0 +1,24 @@
+{
+  "name": "M'PALATH",
+  "short_name": "M'PALATH",
+  "description": "Kochi designer boutique and luxury atelier for bridal couture, bespoke tailoring, and occasion wear.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#E2D0D2",
+  "theme_color": "#0E0718",
+  "icons": [
+    {
+      "src": "/assets/mpalath-logo.png",
+      "sizes": "650x182",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/mpalath-logo-full.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
