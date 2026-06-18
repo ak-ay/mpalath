@@ -9,14 +9,14 @@
   "theme_color": "#0E0718",
   "icons": [
     {
-      "src": "/assets/mpalath-logo.png",
-      "sizes": "650x182",
+      "src": "/assets/favicon-192.png",
+      "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/mpalath-logo-full.png",
-      "sizes": "1920x1080",
+      "src": "/assets/favicon-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }
